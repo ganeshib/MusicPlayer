@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Personal Media Player"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        ></TextView>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/composemusic"
+        >
+    </ImageView>
+
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:src="@drawable/baseline_pause_24"></ImageView>
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_play_arrow_24"></ImageView>
+
+        <ImageView
+            android:id="@+id/stop"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_stop_24"></ImageView>
+    </LinearLayout>
+
+
+
+</LinearLayout>
